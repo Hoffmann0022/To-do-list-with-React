@@ -1,0 +1,35 @@
+.noTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.noTask .info p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--color-secondary);
+}
+
+.noTask .btn{
+    margin: 70px;
+    position: static;
+}
+.button{
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 15px 40px;
+    color: var(--color-secondary);
+    background-color: var(--color-primary-dark);
+    border: 3px solid var(--color-primary-dark);
+    border-radius: 24px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: transparent;
+}

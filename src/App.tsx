@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
-import { Task } from "./components/Task";
-import { Button } from './components/Button';
+import { TaskList } from "./components/TaskList";
+import { NoTask } from "./components/noTask";
 import './css/App.css'
+import { PopUp } from "./components/Pop-up";
+import { TodoProvider } from './contexts/TodoContext';
 
 function App() {
+
   return (
-    <>
-      <Task />
-      <Button />
-    </>
+    <TodoProvider>
+      <TaskList/>
+      <PopUp />
+    </TodoProvider>
   );
 }
 
