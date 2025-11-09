@@ -73,7 +73,7 @@
     opacity: .8;
 }
 
-.bi-x-lg{
+.bi-x-lg {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -82,11 +82,12 @@
     cursor: pointer;
 }
 
-.popUp .btn{
-    margin: 70px;
+.popUp .btn {
+    margin: 40px;
     position: static;
 }
-.button{
+
+.button {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -99,6 +100,31 @@
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     background-color: transparent;
+}
+
+@media (max-width: 1600px) {
+    .popUp {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .popUp {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .popUp {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .popUp {
+        width: 85vw;
+        padding: 15px 15px;
+    }
 }

@@ -14,7 +14,7 @@ export function TaskList({ }) {
             <ul>
                 {tasks.map(task => (
                     <li className="task" key={task.id}>
-                        <input type="checkbox" name="checkbox" id="checkbox" checked={task.isChecked} onChange={() => TaskChecked(task.id)} />
+                        <input type="checkbox" name="checkbox" checked={task.isChecked} onChange={() => TaskChecked(task.id)} />
 
                         <div className="info">
                             <h2>{task.title}</h2>

@@ -101,7 +101,7 @@ input[type=checkbox]:checked:after {
 }
 
 .info h2 {
-    font-size: 1.rem;
+    font-size: 1.5rem;
     color: var(--color-secondary);
     letter-spacing: 2px;
 }
@@ -111,6 +111,8 @@ input[type=checkbox]:checked:after {
     color: var(--color-gray-300);
     font-weight: 200;
     letter-spacing: 2px;
+    width: 100%;
+    word-break: break-all;
 }
 
 .btn {
@@ -134,4 +136,57 @@ input[type=checkbox]:checked:after {
 
 .button:hover {
     background-color: transparent;
+}
+
+@media (max-width: 1600px) {
+    .task {
+        width: 70vw;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .task {
+        width: 80vw;
+    }
+
+    ul {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .task {
+        width: 90vw;
+        padding: 15px 25px;
+    }
+
+    .info h2 {
+        font-size: 1.2rem;
+    }
+
+    .info p {
+        font-size: .8rem;
+    }
+
+    .info {
+        gap: 10px;
+    }
+
+    .bi-trash {
+        font-size: 1.1rem;
+    }
+
+
+    input[type=checkbox]:before {
+        width: 20px;
+        height: 20px;
+    }
+
+    input[type=checkbox]:checked:after {
+        width: 3px;
+        height: 7px;
+        top: 5px;
+        left: 8px;
+    }
 }
